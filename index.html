@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://use.typekit.net/sol4wcr.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+		<script src="./js/index.js" async defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="text-area"></div>
+			<button id="new-game-button">New Game</button>
+			<div id="winner-container"></div>
+      <div id="cards-container">
+        <div class="hand" id="player-hand">
+          <span class="score-val" id="player-score"></span>
+          <div class="card-wrapper">
+            <img id="player-card-a" src="" alt="player card 1">
+            <span class="hover" id="player-card-val-a"></span>
+          </div>
+          <div class="card-wrapper">
+            <img id="player-card-b" src="" alt="player card 2">
+            <span class="hover" id="player-card-val-b"></span>
+          </div>
+        </div>
+        <div class="hand" id="dealer-hand">
+          <span class="score-val" id="dealer-score"></span>
+          <div class="card-wrapper">
+            <img id="dealer-card-a" src="" alt="dealer card 1">
+            <span class="hover" id="dealer-card-val-a"></span>
+          </div>
+          <div class="card-wrapper">
+            <img id="dealer-card-b" src="" alt="dealer card 2">
+            <span class="hover" id="dealer-card-val-b"></span>
+          </div>
+        </div>
+      </div>
+<!--			<div id="score-container">-->
+<!--				<span id="dealer-score"></span>-->
+<!--			</div>-->
+			<div id="button-container">
+				<button id="hit-button">Hit</button>
+				<button id="stay-button">Stay</button>
+			</div>
+		</div>
+	</body>
+</html>

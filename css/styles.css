@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arboria, sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-container button {
+	margin: 0 1rem;
+}
+
+.score-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.score-container span {
+	padding: 0 1rem;
+}
+
+#cards-container {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.score-val {
+	margin-right: 1rem;
+	font-size: 2rem;
+}
+
+#cards-container .hand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.hand:last-child {
+	margin-right: 1rem;
+}
+
+.card-wrapper {
+	position: relative;
+	margin: 0 0.2rem;
+}
+
+.card-wrapper img {
+	position: relative;
+	max-height: 200px;
+}
+
+.card-wrapper > .hover {
+	border-radius: 5px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.card-wrapper > .hover:hover {
+	opacity: 0.8;
+}
