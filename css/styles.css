@@ -1,105 +1,148 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arboria, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arboria, sans-serif;
 }
 
 .container {
-	width: 100%;
-	height: 100vh;
-	box-sizing: border-box;
-	overflow: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .table {
-  width: 900px;
+  width: 90vw;
   max-width: calc(100% - 20px);
-	height:70vh;
+  height: auto;
+  min-height: 500px;
+  position: relative;
   border: 8px solid rgb(10, 43, 2);
   border-radius: 20px;
   background: rgb(22, 77, 8);
   margin: 0 auto;
   color: white;
   padding: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.button-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.dealerBlock {
+  width: 800px;
+  max-width: calc(100% - 40px);
+  height: auto;
+  position: relative;
+  background-color: #52b788;
+  border-color: rgb(10, 43, 2);
+  border-width: 7px;
+  border-style: solid;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.playerBlock {
+  width: 800px;
+  max-width: calc(100% - 40px);
+  height: auto;
+  position: relative;
+  background-color: #52b788;
+  border-color: rgb(10, 43, 2);
+  border-width: 7px;
+  border-style: solid;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2px;
 }
 
 .button-container button {
-	margin: 0 1rem;
+  margin: 0 3px;
 }
 
 .score-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .score-container span {
-	padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 #cards-container {
-	display: none;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
 }
 
 .score-val {
-	margin-right: 1rem;
-	font-size: 2rem;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 #cards-container .hand {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 .hand:last-child {
-	margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .card-wrapper {
-	position: relative;
-	margin: 0 0.2rem;
+  position: relative;
+  margin: 0 0.2rem;
 }
 
 .card-wrapper img {
-	position: relative;
-	max-height: 200px;
+  position: relative;
+  max-height: 200px;
 }
 
 .card-wrapper > .hover {
-	border-radius: 5px;
-	background-color: white;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.4rem;
 }
 
 .card-wrapper > .hover:hover {
-	opacity: 0.8;
+  opacity: 0.8;
+}
+
+#text-area {
+  color: white;
 }
