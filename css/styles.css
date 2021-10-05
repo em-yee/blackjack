@@ -15,6 +15,22 @@ body {
 	flex-direction: column;
 }
 
+.table {
+  width: 900px;
+  max-width: calc(100% - 20px);
+	height:70vh;
+  border: 8px solid rgb(10, 43, 2);
+  border-radius: 20px;
+  background: rgb(22, 77, 8);
+  margin: 0 auto;
+  color: white;
+  padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .button-container {
 	display: flex;
 	align-items: center;
